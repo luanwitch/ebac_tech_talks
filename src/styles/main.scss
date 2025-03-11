@@ -1,11 +1,17 @@
 @use 'hero';
+@use './components/infos_bar';
+@use './components/buttons';
+@use './components/event';
+@use '../styles/variables';
 
 * { 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: Roboto, sans-serif;
-    background-color: #fff;
+    font-family: 'Roboto', sans-serif; // Corrigido para usar a fonte Roboto
+    //Removendo os bullets
+    list-style: none;
+    color: variables.$textColor;
 }
 
 .container { 
